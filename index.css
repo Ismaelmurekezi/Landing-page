@@ -1,0 +1,220 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.header{
+background-color: #1f2937;
+width: fit-content;
+}
+.titles{
+    display:flex;
+    /* background-color: aqua; */
+    position: relative;
+    padding-top: 20px;
+    
+}
+.logo{
+    color: #e5e7eb;
+    margin-left: 20px;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color:rgb(44, 183, 229);
+   
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 150px;
+    color: #e5e7eb;
+    font-size: 20px;
+}
+.menu-list >li:hover{
+   position: relative;
+  animation-name: example;
+  animation-duration: 2s; 
+  animation-fill-mode: forwards;
+}
+@keyframes example {
+ 0%{
+    font-size: 20px;
+ }
+ 50%{
+    font-size: 23px;
+     /* text-decoration:underline sandybrown; */
+    color: #3882f6;
+ }
+
+  }
+.menu-list >li{
+    padding-right: 50px;
+}
+.menu-list>:last-child{
+padding-right: 0px;
+}
+.welcome-content{
+   color: #e5e7eb;
+   width: 500px;
+   font-size: 18px;
+}
+.sign-up{
+    width: 90px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+padding: 10px;
+background-color: #3882f6;
+}
+.sign-up:hover{
+    background-color: #e5e7eb;
+ 
+   position: relative;
+   animation-name: sign-up;
+   animation-duration: 2s; 
+   animation-fill-mode: forwards;
+}
+@keyframes sign-up {
+    from{
+        background-color: #3882f6;
+
+    }
+    to{
+        background-color: #f9faf8;
+        width: 100px;
+    }
+    
+}
+.name{
+    color: rgb(69, 11, 242);
+    font-size: 18px;
+}
+.first-message{
+   position: relative;
+    
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: bolder;
+}
+.first-message:first-child{
+    width: fit-content;
+}
+ .description{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 60px;
+    padding-bottom: 40px ;
+    padding-top: 40px ;
+
+}
+#image{
+    padding-bottom:  10px;
+    border-radius: 5px;
+    width: 400px;
+    height: 40vh;
+    }
+
+.main-content >h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 36px bold;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.main-content >h2{
+    font-family:Helvetica, sans-serif;
+}
+.box-images{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.Quotes-section{
+    background-color: #e5e7eb;
+    height: 200px;
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.Quotes-section >p{
+    width: 500px;
+   font-style: italic;
+   font-size: 25px;
+}
+.Quotes-section >h4{
+    width: 500px;
+    font-size: 25px;
+}
+
+#person{
+   position: absolute;
+   right: 10rem;
+   bottom: 5px;
+}
+.allocate{
+    background-color: #3882f6;
+    color: #f9faf8;
+    width: 700px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+ position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .allocate-content{
+        width: 350px;
+        font-size: 10px;
+    }
+  
+
+.button{
+    color: #f9faf8;
+    background-color: #3882f6;
+    border: 2px solid #f9faf8;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+  
+ 
+}
+.button:hover{
+    position: relative;
+    animation-name: button;
+    animation-duration: 0.9s; 
+    animation-fill-mode: forwards;
+}
+@keyframes button {
+   from {
+    background-color: #3882f6;
+    border: #f9faf8;
+   } 
+   to{
+    background-color: #f9faf8;
+    border: #3882f6;
+    color: #1f2937;
+   }
+}
+  
+.footer{
+    background-color: #1f2937;
+    color: #e5e7eb;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
