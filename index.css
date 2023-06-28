@@ -2,13 +2,16 @@
     padding: 0px;
     margin: 0px;
 }
+body{
+    width:100%;
+    height: 100vh;
+}
 .header{
 background-color: #1f2937;
 width: fit-content;
 }
 .titles{
     display:flex;
-    /* background-color: aqua; */
     position: relative;
     padding-top: 20px;
     
@@ -29,6 +32,19 @@ width: fit-content;
     color: #e5e7eb;
     font-size: 20px;
 }
+
+  
+  .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    margin-bottom: 5px;
+  }
+  
+  /* Styling the hamburger icon */
+  .bar:last-child {
+    margin-bottom: 0;
+  }
 .menu-list >li:hover{
    position: relative;
   animation-name: example;
@@ -41,7 +57,6 @@ width: fit-content;
  }
  50%{
     font-size: 23px;
-     /* text-decoration:underline sandybrown; */
     color: #3882f6;
  }
 
@@ -52,10 +67,159 @@ width: fit-content;
 .menu-list>:last-child{
 padding-right: 0px;
 }
+@media screen and (max-width:700px) {
+  body{
+    max-width: 700px;
+  }
+    .description{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        position: relative;
+    }
+
+    .box-images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .Quotes-section{
+        margin: auto;
+        position: relative;
+        max-width: 600px;
+    }
+
+ 
+    .allocate{
+      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      margin: auto;
+  
+      max-width: 500px;
+      height: 150px;
+    }
+   .footer{
+    max-width: 700px;
+    display: flex;
+    margin: auto;
+   }
+  
+}
+@media only screen and (max-width:480px) {
+    body {
+       
+        overflow-x: hidden;
+        max-width: 480px; /* Set maximum width */
+        margin: 0 auto; /* Center the content horizontally */
+      }
+.first-content >span{
+    font-size: 25px;
+  
+}
+#image{
+    position: relative;
+    max-height: 180px;
+    bottom: 1rem;
+    margin-top: 5px;
+}
+
+
+    .menu-list{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+        gap: 3px;
+        margin-top: 2rem;
+        left: 10px;
+
+    }
+    .welcome-content{
+        font-size: small;
+        max-width: 400px;
+}
+  
+    .description{
+        display: flex;
+       max-width: 430px;
+     right: 3rem;
+        align-items: start;
+        flex-direction: column;
+        flex-wrap: wrap;
+       position: relative;
+       top: 4rem
+    }
+    .first-message{
+        font-size: 18;
+    }
+   
+    .hamburger-menu {
+        display: inline-block;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+       position: absolute;
+       top: 0px;
+       padding: 1rem;
+        }
+      .hamburger-menu .bar{
+        background-color: whitesmoke;
+
+      }
+      .logo{
+        display: flex;
+        margin: auto;
+      }
+      .Quotes-section{
+        margin: auto;
+        max-width: 460px;
+        margin-left: 10px;
+      }
+      .Quotes-section > p,h4{
+        margin: auto;
+        position: relative;
+        max-width: 400px;
+       
+       margin-left: 10px;
+    }
+    .Quotes-section :first-child{
+          font-size: 16px;
+    }
+
+    #person{
+ font-size: 16px;
+    }
+    .allocate{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      margin: auto;
+  
+      max-width: 400px;
+      height: 150px; 
+    }
+    .sign-up{
+        margin-bottom: 15px;
+        margin-left: 5rem;
+    }
+    #image{
+        max-width: 350px;
+        display: flex;
+  
+        left: 0px;
+       
+    }
+    .footer{
+        max-width: 480px;
+    }
+    
+}
 .welcome-content{
    color: #e5e7eb;
    width: 500px;
-   font-size: 18px;
+margin-left: 0px;
 }
 .sign-up{
     width: 90px;
@@ -126,6 +290,7 @@ background-color: #3882f6;
     font-family:Helvetica, sans-serif;
 }
 .box-images{
+
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 40px;
