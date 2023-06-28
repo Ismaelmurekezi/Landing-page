@@ -185,8 +185,7 @@ padding-right: 0px;
         max-width: 400px;
        
        margin-left: 10px;
-       /* late modifications down*/
-       overflow-x: hidden;  
+
     }
     .Quotes-section :first-child{
           font-size: 16px;
@@ -194,8 +193,7 @@ padding-right: 0px;
 
     #person{
  font-size: 16px;
- /* late modification down*/
- position: sticky;
+
     }
     .allocate{
         display: flex;
