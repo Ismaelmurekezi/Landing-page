@@ -8,7 +8,6 @@ body{
 }
 .header{
 background-color: #1f2937;
-width: fit-content;
 }
 .titles{
     display:flex;
@@ -67,6 +66,11 @@ width: fit-content;
 .menu-list>:last-child{
 padding-right: 0px;
 }
+@media screen and (min-width:700px){
+    .hamburger-menu{
+        display: none;
+    }
+}
 @media screen and (max-width:700px) {
   body{
     max-width: 700px;
@@ -74,9 +78,11 @@ padding-right: 0px;
     .description{
         display: flex;
         flex-direction: column;
-        width: fit-content;
         position: relative;
         
+    }
+    .hamburger-menu{
+        display: none;
     }
 
     .box-images{
@@ -262,9 +268,6 @@ background-color: #3882f6;
     color: #f9faf8;
     font-size: 48px;
     font-weight: bolder;
-}
-.first-message:first-child{
-    width: fit-content;
 }
  .description{
     padding-top: 50px;
